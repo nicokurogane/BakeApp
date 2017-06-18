@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dimensions for item_recipe_layout -->
+    <dimen name="textview_recipename_paddingside">16dp</dimen>
+    <dimen name="textview_recipename_padding_bottom_top">16dp</dimen>
+
+
+    <!-- dimensions for item_recipe_layout -->
+
+
+
+</resources>

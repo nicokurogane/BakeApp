@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BakeApp</string>
+
+    <string name="extra_intent_recipe">recipe</string>
+    <string name="extra_intent_step">step</string>
+    <string name ="extra_intent_recipe_name">recipe_name</string>
+    <string name ="extra_intent_bundle">bundle</string>
+
+    <!--ListFragment use-->
+    <string name="bundle_num_list_fragment">bundle_num</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/textview_recipename_paddingside"
+    android:paddingRight="@dimen/textview_recipename_paddingside"
+    android:paddingTop="@dimen/textview_recipename_padding_bottom_top"
+    android:paddingBottom="@dimen/textview_recipename_padding_bottom_top"
+    android:orientation="vertical"
+    >
+
+    <!-- todo (minor) mover los padding de aca al archivo de dimens -->
+    <TextView
+        android:id="@+id/texview_recipe_name"
+        android:background="@color/colorBackground"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="NUTELLA CON MUCHA NUTELLA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+</LinearLayout>

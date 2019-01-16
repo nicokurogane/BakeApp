@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.example.android.bakeapp.fragments.DetailStepPagerAdapter;
 import com.example.android.bakeapp.models.Step;
@@ -46,6 +47,18 @@ public class RecipeStepDetailsActivity extends AppCompatActivity {
                 ActionBar bar = getSupportActionBar();
                 bar.setTitle(recipe);
             }
+
+            //check if the step selected is other than zero
+            if(b.containsKey( getString(R.string.extra_intent_selected_step) )){
+                int position = b.getInt( getString(R.string.extra_intent_selected_step));
+                mStepsPager.setCurrentItem(position);
+            }
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("StepsDetailsOnDestroy","Activity Destroyed");
     }
 }

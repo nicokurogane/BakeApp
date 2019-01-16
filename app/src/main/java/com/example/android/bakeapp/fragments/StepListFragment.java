@@ -56,14 +56,16 @@ public class StepListFragment extends Fragment {
             public void onItemClick(Step step) {
                 Toast.makeText(getContext(), step.getShortDescription(), Toast.LENGTH_SHORT).show();
 
-                //we'll send the list of the current recipe and
-                ArrayList<Step> currentStepList = new ArrayList<Step>();
-                currentStepList.addAll(recipe.getSteps());
+                //we'll send the list of the current recipe
+                ArrayList<Step> currentStepList = new ArrayList<>(recipe.getSteps());
+
 
                 Intent intent = new Intent(getActivity(), RecipeStepDetailsActivity.class);
                 Bundle b = new Bundle();
                 b.putParcelableArrayList(getString(R.string.extra_intent_step), currentStepList);
                 b.putString(getString(R.string.extra_intent_recipe_name), recipe.getName());
+                //get the position of selected step
+                b.putInt( getString(R.string.extra_intent_selected_step) , currentStepList.indexOf(step));
                 intent.putExtra(getString(R.string.extra_intent_bundle), b);
 
                 startActivity(intent);

@@ -3,6 +3,7 @@
 
     <string name="extra_intent_recipe">recipe</string>
     <string name="extra_intent_step">step</string>
+    <string name="extra_intent_selected_step">selected_step</string>
     <string name ="extra_intent_recipe_name">recipe_name</string>
     <string name ="extra_intent_bundle">bundle</string>
 

@@ -2,16 +2,18 @@ package com.example.android.bakeapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+
+
 import android.util.Log;
 
 import com.example.android.bakeapp.fragments.DetailStepPagerAdapter;
 import com.example.android.bakeapp.models.Step;
 
 import java.util.List;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,7 +28,7 @@ public class RecipeStepDetailsActivity extends AppCompatActivity {
     private DetailStepPagerAdapter mRecipeStepPagerAdapter;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_step_detail);
         ButterKnife.bind(this);
@@ -49,8 +51,8 @@ public class RecipeStepDetailsActivity extends AppCompatActivity {
             }
 
             //check if the step selected is other than zero
-            if(b.containsKey( getString(R.string.extra_intent_selected_step) )){
-                int position = b.getInt( getString(R.string.extra_intent_selected_step));
+            if (b.containsKey(getString(R.string.extra_intent_selected_step))) {
+                int position = b.getInt(getString(R.string.extra_intent_selected_step));
                 mStepsPager.setCurrentItem(position);
             }
         }
@@ -59,6 +61,6 @@ public class RecipeStepDetailsActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i("StepsDetailsOnDestroy","Activity Destroyed");
+        Log.i("StepsDetailsOnDestroy", "Activity Destroyed");
     }
 }

@@ -1,12 +1,17 @@
 package com.example.android.bakeapp;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.android.bakeapp.models.Recipe;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+/**
+ * This activity represents the screen were we will show our two pane screen
+ * while on cellphones, it will show just the step
+ */
 public class RecipeStepActivity extends AppCompatActivity {
 
     private boolean mTwoPane;
@@ -16,7 +21,6 @@ public class RecipeStepActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_step);
 
-        //TODO (MEDIUM)  the first item of the recyclerview the list of ingredients
         //TODO (CRITICAL) integrate logic to show the master detail here
 
         Intent intent = getIntent();

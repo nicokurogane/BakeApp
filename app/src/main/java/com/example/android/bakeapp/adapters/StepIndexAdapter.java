@@ -1,24 +1,25 @@
 package com.example.android.bakeapp.adapters;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.android.bakeapp.R;
-import com.example.android.bakeapp.models.Recipe;
 import com.example.android.bakeapp.models.Step;
 
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ *  This Adapter holds the data of the steps, described in a simple way, involved to create
+ *  the dessert.
+ */
 
-
-//TODO(CRITICAL) ACTUALIZAR ESTE ADAPTAR PARA QUE MUESTRE EL PRIMER ITEM DE INGREDIENTES
 public class StepIndexAdapter extends RecyclerView.Adapter<StepIndexAdapter.StepViewHolder> {
 
     public interface OnItemClickListener {

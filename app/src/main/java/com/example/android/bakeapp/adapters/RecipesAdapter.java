@@ -1,7 +1,7 @@
 package com.example.android.bakeapp.adapters;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +12,13 @@ import com.example.android.bakeapp.models.Recipe;
 
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
+/**
+ * This is the list where the data for the recipes is stored
+ */
 public class RecipesAdapter extends RecyclerView.Adapter<RecipesAdapter.RecipeViewHolder> {
 
     public interface OnItemClickListener {

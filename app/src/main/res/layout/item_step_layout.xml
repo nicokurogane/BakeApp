@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This layout is used to show the steps involved in the recipe  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,6 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        tools:text="AQUI VA LA DESCRIPCION" />
+        tools:text="AQUI VA LA DESCRIPCION DEL PASO A USAR" />
 
 </LinearLayout>

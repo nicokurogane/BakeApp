@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <!-- the pager that let us review the info of eaach step -->
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager_step_detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--  This layout is used for the the RecipeViewHolder so it can show
+      the names of the recipes
+      Classes using this layout: RecipesAdapter
+  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
